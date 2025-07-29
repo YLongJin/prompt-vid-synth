@@ -61,7 +61,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Video editing theme colors
+				video: {
+					primary: 'hsl(var(--video-primary))',
+					secondary: 'hsl(var(--video-secondary))',
+					accent: 'hsl(var(--video-accent))',
+					surface: 'hsl(var(--video-surface))',
+					'surface-hover': 'hsl(var(--video-surface-hover))',
+					border: 'hsl(var(--video-border))',
+					text: 'hsl(var(--video-text))',
+					'text-muted': 'hsl(var(--video-text-muted))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-surface': 'var(--gradient-surface)',
+				'gradient-accent': 'var(--gradient-accent)'
+			},
+			boxShadow: {
+				'video': 'var(--shadow-video)',
+				'card-video': 'var(--shadow-card)',
+				'glow': 'var(--shadow-glow)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
