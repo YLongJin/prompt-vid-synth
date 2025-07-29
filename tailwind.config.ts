@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'orbitron': ['Orbitron', 'monospace'],
+				'rajdhani': ['Rajdhani', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -62,31 +66,52 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Video editing theme colors
-				video: {
-					primary: 'hsl(var(--video-primary))',
-					secondary: 'hsl(var(--video-secondary))',
-					accent: 'hsl(var(--video-accent))',
-					surface: 'hsl(var(--video-surface))',
-					'surface-hover': 'hsl(var(--video-surface-hover))',
-					border: 'hsl(var(--video-border))',
-					text: 'hsl(var(--video-text))',
-					'text-muted': 'hsl(var(--video-text-muted))'
-				}
+				// Sci-fi neon colors
+				neon: {
+					cyan: 'hsl(var(--neon-cyan))',
+					blue: 'hsl(var(--neon-blue))',
+					purple: 'hsl(var(--neon-purple))',
+					green: 'hsl(var(--neon-green))',
+					pink: 'hsl(var(--neon-pink))'
+				},
+				surface: {
+					DEFAULT: 'hsl(var(--surface))',
+					hover: 'hsl(var(--surface-hover))',
+					glow: 'hsl(var(--surface-glow))'
+				},
+				'dark-bg': 'hsl(var(--dark-bg))',
+				'darker-bg': 'hsl(var(--darker-bg))',
+				'border-glow': 'hsl(var(--border-glow))',
+				'text-primary': 'hsl(var(--text-primary))',
+				'text-secondary': 'hsl(var(--text-secondary))',
+				'text-muted': 'hsl(var(--text-muted))'
 			},
 			backgroundImage: {
-				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-cyber': 'var(--gradient-cyber)',
+				'gradient-neon': 'var(--gradient-neon)',
+				'gradient-matrix': 'var(--gradient-matrix)',
 				'gradient-surface': 'var(--gradient-surface)',
-				'gradient-accent': 'var(--gradient-accent)'
+				'gradient-bg': 'var(--gradient-bg)'
 			},
 			boxShadow: {
-				'video': 'var(--shadow-video)',
-				'card-video': 'var(--shadow-card)',
-				'glow': 'var(--shadow-glow)'
+				'neon': 'var(--shadow-neon)',
+				'glow': 'var(--shadow-glow)',
+				'purple': 'var(--shadow-purple)',
+				'card-sci': 'var(--shadow-card)',
+				'intense': 'var(--shadow-intense)'
+			},
+			animation: {
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'scan-line': 'scan-line 2s infinite',
+				'matrix-rain': 'matrix-rain 3s linear infinite',
+				'neon-flicker': 'neon-flicker 1.5s ease-in-out infinite alternate',
+				'accordion-down': 'accordion-down 0.2s ease-out',
+				'accordion-up': 'accordion-up 0.2s ease-out'
 			},
 			transitionTimingFunction: {
-				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
-				'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
+				'cyber': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'glow': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
